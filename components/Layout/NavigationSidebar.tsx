@@ -132,9 +132,8 @@ export function NavigationSidebar(_: NavigationSidebarProps) {
         </Button>
       </Link>
       <Link
-        href={`${process.env.NEXT_PUBLIC_KADO_LINK_URL}${
-          status === WalletStatusType.connected ? `&onToAddress=${address}` : ''
-        }`}
+        href={`${process.env.NEXT_PUBLIC_KADO_LINK_URL}${status === WalletStatusType.connected ? `&onToAddress=${address}` : ''
+          }`}
         target="__blank"
         passHref
       >
@@ -187,7 +186,7 @@ export function NavigationSidebar(_: NavigationSidebarProps) {
                   >
                     {__TEST_MODE__ ? 'Testnet' : 'Beta'}
                   </Text>
-                  <LogoText />
+                  <LogoText width="127px" height="27px" />
                 </div>
               </StyledDivForLogo>
             </Link>
